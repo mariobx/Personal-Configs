@@ -50,7 +50,7 @@ move_and_log() {
   file_name=$(basename "$file_path")
 
   # Attempt to move the file
-  if mv "$file_path" "$dest_dir"; then
+  if mv -t "$file_path" "$dest_dir"; then
     echo "$(date): Moved existing file: $file_name to $dest_dir" >> "$DEST_FILE_LOG"
   else
     echo "$(date): ERROR - Failed to move $file_name" >> "$DEST_FILE_LOG"
