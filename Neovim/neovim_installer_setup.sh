@@ -20,7 +20,7 @@ install_debian() {
     echo "Detected Debian/Ubuntu..."
     # 1. Install dependencies via apt (but NOT neovim)
     sudo apt update
-    sudo apt install -y git ripgrep fd-find build-essential unzip wget nodejs npm curl
+    sudo apt install -y git ripgrep fd-find build-essential unzip wget nodejs npm curl wl-clipboard
 
     # 2. Install Neovim (AppImage)
     echo "Downloading latest Neovim AppImage..."
